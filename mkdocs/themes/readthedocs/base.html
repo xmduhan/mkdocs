@@ -45,10 +45,10 @@
     <![endif]-->
     {%- if config.theme.highlightjs %}
       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script> -->
-      <script src="{{ 'js/highlight.js'|url }}"></script>
+      <script src="{{ 'js/highlight.min.js'|url }}"></script>
       {%- for lang in config.theme.hljs_languages %}
       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/{{lang}}.min.js"></script> -->
-      <script src="{{ 'js/highlight.'+lang+'.js'|url }}"></script>
+      <script src="{{ 'js/highlight.'+lang+'.min.js'|url }}"></script>
       {%- endfor %}
       <script>hljs.highlightAll();</script>
     {%- endif %}
